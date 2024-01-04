@@ -1,0 +1,264 @@
+.ui-row-1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 35px 30px 25px 30px;
+}
+
+.logo-comp {
+  position: relative;
+  left: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo-comp:hover {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo-comp > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: #1F2937;
+  box-shadow: #1F2937;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo-comp > div > svg {
+  fill: white;
+  width: 70%;
+  height: 70%;
+  filter: drop-shadow(1px 1px 0px lightblue);
+  transition: all 0.4s ease-in-out;
+}
+
+.logo-comp p {
+  letter-spacing: 3px;
+  font-size: 16pt;
+  margin: 0;
+  margin-left: 12px;
+  padding: 0;
+  color: #1F2937;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo-comp:hover > p {
+  color: black;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo-comp:hover > div > svg {
+  fill: black;
+  filter: unset;
+  transition: all 0.4s ease-in-out;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
+
+.search input {
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px 0 #1F2937, inset 0px -4px 8px 0 lightgrey;
+  border: none !important;
+  padding: 0px 20px 5px 20px;
+}
+
+.search > svg {
+  position: absolute;
+  right: 20px;
+  bottom: 38%;
+  width: 18px;
+  height: auto;
+  fill: #1F2937;
+}
+
+.search input:focus {
+  outline: 1px solid blueviolet;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.profile > svg {
+  fill: #1F2937;
+  width: 25px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.profile > svg:nth-child(3) {
+  margin-left: 5px;
+  order: 4;
+  fill: #1F2937;
+  margin-right: unset;
+}
+
+.profile > svg:hover,
+.profile-small > svg:hover {
+  cursor: pointer;
+  fill: #1F2937;
+}
+
+.profile > svg:active,
+.profile-small > svg:active {
+  transform: scale(0.92);
+}
+
+.profile > div {
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+  background: url("https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.profile-small {
+  display: none;
+}
+
+.grid-container{
+  text-align: center;
+  background: #1F2937;
+  padding: 50px;
+  color: white;
+  border: 2px black solid;
+  border-radius: 50px;
+  
+}
+
+.main-text{
+  font-size: 48px;
+  font-weight: extra-bold;
+  color: #F9FAF8;
+}
+
+.second-text{
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.call-button{
+  background:#3882F6;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 16px
+}
+
+.call-to-action{
+  background: #3882F6;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  padding: 20px
+}
+
+footer{
+  background-color: #1F2937;
+  color: white;
+  text-align: center;
+  padding: 10px
+}
+
+.quote{
+  font-size:36px;
+  color: #1F2937;
+  background: #E5E7EB;
+  text-align: center;
+  padding: 20px
+}
+
+.writer{
+  font-size: 20px;
+}
+
+.flex-container {
+  display: flex;
+  padding: 0 15vw 10vh 15vw;
+  justify-content: space-between;
+}
+
+.flex-container div {
+  /* border: 2px solid #3882f6; */
+  border-radius: 0.7rem;
+  height: 200px;
+}
+
+.flex-container img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: fill;
+  border-radius: 0.7rem;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.content {
+  padding: 10vh 15vw 10vh 15vw;
+  color: #1f2937;
+}
+
+.grid-container{
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-text, .second-text{
+  flex: 1;
+  display: flex;
+  gap: var(--space-1);
+  flex-direction: column;
+}
+
+.homeless-pet{
+  align-self: stretch;
+    flex: 1.24;
+    border-radius: 8px;
+}
+
+h2{
+  text-align: center
+}
+
+.flex-container img{
+  width: 200px;
+  height: 200px
+}
